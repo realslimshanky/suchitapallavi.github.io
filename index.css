@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Rosario&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rosario', Verdana, sans-serif;
+}
+body {
+    min-height: 100vh;
+    padding: 100px;
+}
+a {
+    text-decoration: none;
+}
+nav.container {
+    display: flex;
+    justify-content: flex-end;
+}
+nav.container a {
+    margin-left: 50px;
+    font-weight: bold;
+}
+.header-box {
+    margin-top: 200px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.animated-character {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.animated-character div {
+    background-color: #C4C4C4;
+    border-radius: 8px;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+header div {
+    margin: 10px;
+}
+header h1 {
+    font-size: 4em;
+    font-weight: normal;
+}
+.header-h4 {
+    width: 400px;
+    text-align: left;
+}
+.header-h4 h4 {
+    font-size: 1.875em;
+}
+.header-cta {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: space-around;
+}
+.header-cta div {
+    width: 40%
+}
+.header-cta button {
+    background-color: #000000;
+    padding: 10px 40px;
+    color: white;
+    border: none;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 1.5em;
+}
