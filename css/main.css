@@ -45,6 +45,14 @@ h5 {
     background-color: #01F0FF;
     z-index: 1000;
 }
+.nav-icon {
+    width: 50px !important;
+    height: 50px !important;
+}
+#contact .icon {
+    width: 40px;
+    height: 40px;
+}
 
 #curtain.animate {
     -webkit-animation: openToRight 1s ease-out 1s normal 1 forwards;
@@ -85,7 +93,6 @@ nav.container {
 }
 nav.container a {
     margin-left: 50px;
-    font-weight: bold;
     font-size: 1.25em;
 }
 header {
@@ -285,6 +292,9 @@ header div {
 }
 
 @media only screen and (max-width: 800px) {
+    #work {
+        padding-top: 20vh;
+    }
     .project-row {
         flex-direction: column;
         padding: 0 1vh 50px 1vh;
