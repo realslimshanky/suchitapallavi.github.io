@@ -12,6 +12,7 @@ html {
 }
 body {
     min-height: 100vh;
+    overflow-x: hidden;
 }
 a {
     text-decoration: none;
@@ -36,6 +37,42 @@ h5 {
     font-size: 1.75em;
     font-weight: normal;
 }
+#curtain {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    display: block;
+    background-color: #01F0FF;
+    z-index: 1000;
+}
+
+#curtain.animate {
+    -webkit-animation: openToRight 1s ease-out 1s normal 1 forwards;
+    -moz-animation: openToRight 1s ease-out 1s normal 1 forwards;
+    animation: openToRight 1s ease-out 1s normal 1 forwards;
+}
+@keyframes openToRight {
+    99% {
+        opacity: 1;
+        z-index: 1000;
+    }
+    100% {
+        transform: translateX(+100%);
+        z-index: -1000;
+    }
+}
+
+.slide-to-original-position {
+    -webkit-animation: slideToOriginalPosition 1s ease-out 0s normal 1 forwards;
+    -moz-animation: slideToOriginalPosition 1s ease-out 0s normal 1 forwards;
+    animation: slideToOriginalPosition 1s ease-out 0s normal 1 forwards;
+}
+@keyframes slideToOriginalPosition {
+    100% {
+        transform: translateX(0%);
+    }
+}
+
 nav.container {
     position: fixed;
     top: 0;
@@ -44,6 +81,7 @@ nav.container {
     background-color: #ffffff;
     display: flex;
     justify-content: flex-end;
+    z-index: 1;
 }
 nav.container a {
     margin-left: 50px;
@@ -74,17 +112,13 @@ header div {
     text-align: center;
 }
 .animated-character div {
-    background-color: #C4C4C4;
-    border-radius: 8px;
-    width: 30vw;
-    height: 30vw;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .header-text {
-    max-width: 400px;
-    text-align: left;
+    max-width: 350px;
+    text-align: center;
 }
 .header-cta {
     margin-top: 50px;
@@ -106,6 +140,7 @@ header div {
     border-radius: 8px;
     font-size: 1.5em;
     white-space: nowrap;
+    cursor: pointer;
 }
 .only-mobile {
     display: none;
@@ -144,7 +179,7 @@ header div {
     }
     .mobile-close-nav-button {
         display: none;
-        z-index: 1;
+        z-index: 2;
     }
     nav.container {
         display: none;
@@ -156,6 +191,7 @@ header div {
         align-items: center;
         justify-content: space-evenly;
         background-color: #01F0FF;
+
     }
     nav.container a {
         margin: 0;
@@ -208,7 +244,7 @@ header div {
     box-shadow: 0 0 5px 0 #ffffff;
 }
 #work {
-    padding-top: 20vh;
+    padding: 20vh 0 20vh 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -221,15 +257,18 @@ header div {
     padding: 0 10vh 50px 10vh;
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
 }
-.project-image {
-    background-color: #C4C4C4;
-    border-radius: 8px;
-    width: 200px;
-    height: 200px;
+.project-image img {
+    width: 350px;
+    height: 300px;
+}
+.project-description {
+    padding-left: 5vw;
 }
 .project-description h3 {
     padding-bottom: 20px;
+    font-weight: bold;
 }
 #contact {
     width: 100vw;
@@ -237,17 +276,34 @@ header div {
     display: flex;
     justify-content: space-evenly;
 }
+#contact a:visited {
+    color: black;
+}
+#index-header img {
+    width: 40vw;
+    height: 40vw;
+}
 
 @media only screen and (max-width: 800px) {
     .project-row {
+        flex-direction: column;
         padding: 0 1vh 50px 1vh;
     }
-    .project-image {
-        width: 100px;
-        height: 100px;
+    .project-image img {
+        width: 250px;
+        height: 200px;
+    }
+    .project-description {
+        text-align: center;
+        width: 50vw;
+        padding: 100px;
     }
     #contact {
         padding: 100px 1vh 50px 1vh;
+    }
+    #index-header img {
+        width: 80vw;
+        height: 80vw;
     }
 }
 
@@ -257,6 +313,9 @@ header div {
 }
 #about h1 {
     color: #01F0FF;
+}
+#about #curtain {
+    background-color: #01F0FF;
 }
 #about nav.container {
     background-color: #000000;
@@ -268,16 +327,15 @@ header div {
 #about nav.container a.active {
     color: #01F0FF;
 }
+#about img {
+    width: 40vw;
+    height: 40vw;
+}
 #about a {
     color: #01F0FF;
 }
 #about .nav-button i {
     color: #01F0FF;
-}
-#about .animated-character div {
-    background-color: #C4C4C4;
-    width: 30vw;
-    height: 40vw;
 }
 #about .header-text {
     max-width: 600px;
@@ -288,6 +346,7 @@ header div {
 }
 #facts {
     text-align: center;
+    padding-bottom: 100px;
 }
 #facts h5 {
     color: #ffffff;
@@ -301,11 +360,14 @@ header div {
     text-align: left;
     padding-left: 100px;
 }
+#about #contact a:visited {
+    color: #01F0FF;
+}
 
 @media only screen and (max-width: 800px) {
-    #about .animated-character div {
-        width: 200px;
-        height: 200px;
+    #about img {
+        width: 80vw;
+        height: 80vw;
     }
     .fact-header {
         font-size: 9em;

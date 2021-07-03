@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="css/main.css">
     </head>
     <body id="index">
+        <div id="curtain"></div>
         <div class="only-mobile nav-button mobile-nav-button"><i class="fas fa-bars fa-lg"></i></div>
         <div class="only-mobile nav-button mobile-close-nav-button"><i class="fas fa-times fa-lg"></i></div>
         <nav class="container">
@@ -15,10 +16,10 @@
             <a href="/#contact">Contact</a>
         </nav>
         <div id="index-header" class="header-box">
-            <div class="animated-character">
-                <div>Animated Character</div>
+            <div class="animated-character slide-from-left">
+                <div><img src="/images/index_illustration.svg" alt=""></div>
             </div>
-            <header>
+            <header class="slide-from-right">
                 <div>
                     <h1>Hi, I am Suchita.</h1>
                 </div>
@@ -27,7 +28,7 @@
                 </div>
                 <div class="header-cta">
                     <div><button>RESUME</button></div>
-                    <div><button>HIRE ME</button></div>
+                    <div><a href="mailto: suchita.pallavi+website@gmail.com"><button>HIRE ME</button></a></div>
                 </div>
             </header>
         </div>
@@ -36,24 +37,25 @@
                 <h2>UX Projects</h2>
             </div>
             <div class="project-row">
-                <div class="project-image"></div>
-                <div class="project-description">
-                    <h3>URBOTONY</h3>
-                    <h4>Designed an app from scratch.</h4>
+                <div class="project-image slide-from-left">
+                    <img src="/images/urbotony_mockup.png" alt="">
                 </div>
-            </div>
-            <div class="project-row">
-                <div class="project-image"></div>
-                <div class="project-description">
+                <div class="project-description slide-from-right">
                     <h3>URBOTONY</h3>
-                    <h4>Designed an app from scratch.</h4>
+                    <h4>Designed a platform from scatch for all the information related to home gardening.</h4>
                 </div>
             </div>
         </div>
         <div id="contact">
-            <i class="fab fa-linkedin-in fa-lg"></i>
-            <i class="fab fa-instagram fa-lg"></i>
-            <i class="fab fa-twitter fa-lg"></i>
+            <a href="https://www.linkedin.com/in/suchitapallavi">
+                <i class="fab fa-linkedin-in fa-lg slide-from-left"></i>
+            </a>
+            <a href="https://www.instagram.com/designsbysuchi/">
+                <i class="fab fa-instagram fa-lg"></i>
+            </a>
+            <a href="https://twitter.com/SuchitaPallavi">
+                <i class="fab fa-twitter fa-lg slide-from-right"></i>
+            </a>
         </div>
     </body>
 
