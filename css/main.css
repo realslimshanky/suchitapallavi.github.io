@@ -70,14 +70,25 @@ h5 {
     }
 }
 
-.slide-to-original-position {
-    -webkit-animation: slideToOriginalPosition 1s ease-out 0s normal 1 forwards;
-    -moz-animation: slideToOriginalPosition 1s ease-out 0s normal 1 forwards;
-    animation: slideToOriginalPosition 1s ease-out 0s normal 1 forwards;
+.fade {
+    -webkit-animation: fade 2s ease-out 0s normal 1 forwards;
+    -moz-animation: fade 2s ease-out 0s normal 1 forwards;
+    animation: fade 2s ease-out 0s normal 1 forwards;
 }
-@keyframes slideToOriginalPosition {
+@keyframes fade {
+    0% {
+        display: none;
+        opacity: 0;
+    }
+
+    1% {
+        display: block;
+        opacity: 0;
+    }
+
     100% {
-        transform: translateX(0%);
+        display: block;
+        opacity: 1;
     }
 }
 
@@ -180,9 +191,10 @@ header div {
     .nav-button {
         cursor: pointer;
         position: fixed;
-        width: 100%;
+        width: 100vw;
         padding: 50px 50px 0 0;
         text-align: right;
+        z-index: 1;
     }
     .mobile-close-nav-button {
         display: none;
@@ -192,7 +204,7 @@ header div {
         display: none;
         padding: 0;
         height: 100vh;
-        width: 100%;
+        width: 100vw;
         padding-top: 100px;
         flex-direction: column;
         align-items: center;
@@ -250,6 +262,9 @@ header div {
 #index nav {
     box-shadow: 0 0 5px 0 #ffffff;
 }
+nav a:visited {
+    color: black;
+}
 #work {
     padding: 20vh 0 20vh 0;
     display: flex;
@@ -293,11 +308,11 @@ header div {
 
 @media only screen and (max-width: 800px) {
     #work {
-        padding-top: 20vh;
+        padding: 20vh 0 0 0;
     }
     .project-row {
         flex-direction: column;
-        padding: 0 1vh 50px 1vh;
+        padding: 0 1vh 0 1vh;
     }
     .project-image img {
         width: 250px;
@@ -309,7 +324,7 @@ header div {
         padding: 100px 0;
     }
     #contact {
-        padding: 100px 1vh 50px 1vh;
+        padding: 50px 1vh 50px 1vh;
     }
     #index-header img {
         width: 80vw;
@@ -333,9 +348,6 @@ header div {
 }
 #about nav.container a {
     color: #ffffff;
-}
-#about nav.container a.active {
-    color: #01F0FF;
 }
 #about img {
     width: 40vw;

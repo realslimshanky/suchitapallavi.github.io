@@ -5,25 +5,51 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>About Me | Suchita Pallavi | UX Designer | Digital Artist</title>
         <link rel="stylesheet" href="css/main.css">
+        <noscript>
+            <style type="text/css">
+                #curtain {
+                    display: "none";
+                    opacity: 0;
+                    z-index: -1000;
+                }
+                @media only screen and (max-width: 800px) {
+                    nav.container {
+                        position: fixed;
+                        top: 0;
+                        width: 100vw;
+                        height: auto;
+                        padding: 40px 0 40px 0;
+                        background-color: #ffffff;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        z-index: 1;
+                    }
+                    nav.container a {
+                        padding: 0 2vw 0 2vw;
+                    }
+                }
+            </style>
+        </noscript>
     </head>
     <body id="about">
         <div id="curtain"></div>
         <div class="only-mobile nav-button mobile-nav-button">
-            <img class="nav-icon" src="/images/menu-blue.svg" alt="">
+            <img class="nav-icon" src="/images/menu-blue.svg" alt="Menu Icon">
         </div>
         <div class="only-mobile nav-button mobile-close-nav-button">
-            <img class="nav-icon" src="/images/cross-blue.svg" alt="">
+            <img class="nav-icon" src="/images/cross-blue.svg" alt="Cross Icon">
         </div>
         <nav class="container">
             <a href="/#work">Work</a>
-            <a class='active' href="#">About</a>
+            <a href="#">About</a>
             <a href="#contact">Contact</a>
         </nav>
         <div class="header-box">
-            <div class="animated-character slide-from-left">
-                <div><img src="/images/about_illustration.svg" alt=""></div>
+            <div class="animated-character fade-in">
+                <div><img src="/images/about_illustration.svg" alt="Character Illustrations"></div>
             </div>
-            <header class="slide-from-right">
+            <header class="fade-in">
                 <div>
                     <h1>About Suchita</h1>
                 </div>
@@ -41,7 +67,7 @@
             </header>
         </div>
         <div id="facts">
-            <div class="fact-container slide-from-left">
+            <div class="fact-container fade-in">
                 <div class="fact-header">
                     <p>1.</p>
                 </div>
@@ -51,7 +77,7 @@
                     </h5>
                 </div>
             </div>
-            <div class="fact-container slide-from-right">
+            <div class="fact-container fade-in">
                 <div class="fact-header">
                     <p>2.</p>
                 </div>
@@ -61,7 +87,7 @@
                     </h5>
                 </div>
             </div>
-            <div class="fact-container slide-from-left">
+            <div class="fact-container fade-in">
                 <div class="fact-header">
                     <p>3.</p>
                 </div>
@@ -71,7 +97,7 @@
                     </h5>
                 </div>
             </div>
-            <div class="fact-container slide-from-right">
+            <div class="fact-container fade-in">
                 <div class="fact-header">
                     <p>4.</p>
                 </div>
@@ -82,20 +108,17 @@
                 </div>
             </div>
         </div>
-
-
         <div id="contact">
-            <a class="slide-from-left" href="https://www.linkedin.com/in/suchitapallavi">
-                <img class="icon" src="/images/linkedin-blue.svg" alt="">
+            <a class="fade-in" href="https://www.linkedin.com/in/suchitapallavi">
+                <img class="icon" src="/images/linkedin-blue.svg" alt="Linkedin Icon">
             </a>
-            <a href="https://www.instagram.com/designsbysuchi/">
-                <img class="icon" src="/images/instagram-blue.svg" alt="">
+            <a class="fade-in" href="https://www.instagram.com/designsbysuchi/">
+                <img class="icon" src="/images/instagram-blue.svg" alt="Instagram Icon">
             </a>
-            <a class="slide-from-right" href="https://twitter.com/SuchitaPallavi">
-                <img class="icon" src="/images/twitter-blue.svg" alt="">
+            <a class="fade-in" href="https://twitter.com/SuchitaPallavi">
+                <img class="icon" src="/images/twitter-blue.svg" alt="Twitter Icon">
             </a>
         </div>
     </body>
-
     <script src="js/main.js"></script>
 </html>
