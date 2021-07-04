@@ -298,9 +298,6 @@ nav a:visited {
     display: flex;
     justify-content: space-evenly;
 }
-#contact a:visited {
-    color: black;
-}
 #index-header img {
     width: 40vw;
     height: 40vw;
@@ -345,9 +342,6 @@ nav a:visited {
 #about nav.container {
     background-color: #000000;
     box-shadow: 0 0 5px 0 #000000;
-}
-#about nav.container a {
-    color: #ffffff;
 }
 #about img {
     width: 40vw;
