@@ -93,9 +93,9 @@ h5 {
 }
 
 .slide-to-original-position {
-    -webkit-animation: slideToOriginalPosition 0.5s ease-out 0s normal 1 forwards;
-    -moz-animation: slideToOriginalPosition 0.5s ease-out 0s normal 1 forwards;
-    animation: slideToOriginalPosition 0.5s ease-out 0s normal 1 forwards;
+    -webkit-animation: slideToOriginalPosition 1s ease-out 0s normal 1 forwards;
+    -moz-animation: slideToOriginalPosition 1s ease-out 0s normal 1 forwards;
+    animation: slideToOriginalPosition 1s ease-out 0s normal 1 forwards;
 }
 @keyframes slideToOriginalPosition {
     100% {
