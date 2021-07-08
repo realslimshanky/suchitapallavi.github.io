@@ -27,7 +27,6 @@ if (vw < 800){
         }, 1500);
     });
 } else {
-
     var elementsToSlideFromLeft = document.querySelectorAll(".slide-from-left");
     elementsToSlideFromLeft.forEach(element => {
         element.style.display = "float";
