@@ -18,23 +18,23 @@ a {
     text-decoration: none;
 }
 h1 {
-    font-size: 4em;
+    font-size: 4rem;
     font-weight: normal;
 }
 h2 {
-    font-size: 3em;
+    font-size: 3rem;
     font-weight: normal;
 }
 h3 {
-    font-size: 2.187em;
+    font-size: 2.187rem;
     font-weight: normal;
 }
-h4 {
-    font-size: 1.875em;
+h4, p, li {
+    font-size: 1.875rem;
     font-weight: normal;
 }
 h5 {
-    font-size: 1.75em;
+    font-size: 1.75rem;
     font-weight: normal;
 }
 #curtain {
@@ -115,7 +115,7 @@ nav.container {
 }
 nav.container a {
     margin-left: 50px;
-    font-size: 1.25em;
+    font-size: 1.25rem;
 }
 header {
     width: 60%;
@@ -167,7 +167,7 @@ header div {
     border: none;
     text-decoration: none;
     border-radius: 8px;
-    font-size: 1.5em;
+    font-size: 1.5rem;
     white-space: nowrap;
     cursor: pointer;
 }
@@ -185,23 +185,23 @@ header div {
 
 @media only screen and (max-width: 800px) {
     h1 {
-        font-size: 2em;
+        font-size: 2rem;
         font-weight: normal;
     }
     h2 {
-        font-size: 1.5em;
+        font-size: 1.5rem;
         font-weight: normal;
     }
     h3 {
-        font-size: 1.093em;
+        font-size: 1.093rem;
         font-weight: normal;
     }
-    h4 {
-        font-size: 0.937em;
+    h4, p, li {
+        font-size: 0.937rem;
         font-weight: normal;
     }
     h5 {
-        font-size: 0.875em;
+        font-size: 0.875rem;
         font-weight: normal;
     }
     .only-mobile {
@@ -214,6 +214,7 @@ header div {
         padding: 50px 50px 0 0;
         text-align: right;
         z-index: 1;
+        background-color: #ffffff;
     }
     .mobile-close-nav-button {
         display: none;
@@ -244,7 +245,7 @@ header div {
     .header-cta button {
         padding: 10px 20px;
         border-radius: 8px;
-        font-size: 1em;
+        font-size: 1rem;
     }
     #logo {
         margin: 60px 0 0 50px;
@@ -255,28 +256,28 @@ header div {
 
 @media only screen and (min-width: 801px) and (max-width: 1200px) {
     h1 {
-        font-size: 2.5em;
+        font-size: 2.5rem;
         font-weight: normal;
     }
     h2 {
-        font-size: 2em;
+        font-size: 2rem;
         font-weight: normal;
     }
     h3 {
-        font-size: 1.7em;
+        font-size: 1.7rem;
         font-weight: normal;
     }
     h4 {
-        font-size: 1.5em;
+        font-size: 1.5rem;
         font-weight: normal;
     }
     h5 {
-        font-size: 1em;
+        font-size: 1rem;
         font-weight: normal;
     }
     .fact-header {
         color: #01F0FF;
-        font-size: 15em;
+        font-size: 15rem;
         text-align: left;
         padding-left: 100px;
     }
@@ -286,7 +287,7 @@ header div {
 #index nav {
     box-shadow: 0 0 5px 0 #ffffff;
 }
-nav a:visited {
+nav a:link, nav a:visited {
     color: black;
 }
 #work {
@@ -298,6 +299,9 @@ nav a:visited {
 #work h2 {
     padding-bottom: 100px;
 }
+.project-description a:link, .project-description a:visited {
+    color: black;
+}
 .project-row {
     width: 100vw;
     padding: 0 10vh 50px 10vh;
@@ -305,9 +309,17 @@ nav a:visited {
     justify-content: space-evenly;
     align-items: center;
 }
-.project-image img {
+/* Urbotony Image */
+img.urbotony {
     width: 350px;
     height: 300px;
+}
+/* Spider Sense Image */
+img.spider-sense {
+    width: 200px;
+    height: 300px;
+    border: 1px solid #000000;
+    margin: 0 75px 0 75px;
 }
 .project-description {
     padding-left: 5vw;
@@ -335,8 +347,14 @@ nav a:visited {
         flex-direction: column;
         padding: 0 1vh 0 1vh;
     }
-    .project-image img {
+    /* Urbotony Image */
+    img.urbotony {
         width: 250px;
+        height: 200px;
+    }
+    /* Spider Sense Image */
+    img.spider-sense {
+        width: 150px;
         height: 200px;
     }
     .project-description {
@@ -396,11 +414,11 @@ nav a:visited {
 }
 .fact-header {
     color: #01F0FF;
-    font-size: 18em;
+    font-size: 18rem;
     text-align: left;
     padding-left: 100px;
 }
-#about #contact a:visited {
+#about #contact a:link, #about #contact a:visited {
     color: #01F0FF;
 }
 
@@ -410,15 +428,106 @@ nav a:visited {
         height: 70vw;
     }
     .fact-header {
-        font-size: 9em;
+        font-size: 9rem;
         padding-left: 10px;
     }
 }
 @media only screen and (min-width: 801px) and (max-width: 1200px) {
     .fact-header {
         color: #01F0FF;
-        font-size: 15em;
+        font-size: 15rem;
         text-align: left;
         padding-left: 100px;
     }
+}
+
+/* Urbotony */
+
+#urbotony header {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 200px 0 100px 0;
+    background-image: url("/images/urbotony-header.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+#urbotony header img {
+    display: none;
+}
+#urbotony header h1 {
+    margin-bottom: 50px;
+}
+#urbotony section {
+    margin-top: 100px;
+    padding: 0 10vw 0 10vw;
+}
+#urbotony img {
+    width: 100%;
+}
+#urbotony section img {
+    margin-top: 50px;
+}
+#urbotony p, #urbotony ol {
+    margin-top: 20px;
+    text-align: justify;
+}
+#urbotony .center {
+    text-align: center;
+}
+#urbotony ol, #urbotony ul {
+    list-style-position: inside;
+}
+#urbotony #contact {
+    margin-top: 100px;
+}
+@media only screen and (max-width: 800px) {
+    #urbotony header {
+        padding: 100px 0 0 0;
+        background-image: none;
+        height: auto;
+    }
+    #urbotony header img {
+        display: block;
+        width: 100vw;
+        margin-bottom: 50px;
+    }
+    #urbotony header h1 {
+        margin-bottom: auto;
+    }
+    #urbotony section {
+        margin-top: 50px;
+        padding: 0 5vw 0 5vw;
+    }
+    #urbotony section img {
+        width: 100vw;
+        margin-left: -5vw;
+    }
+    #urbotony section section img {
+        width: 100vw;
+        margin-left: -10vw;
+    }
+}
+@media only screen and (min-width: 801px) and (max-width: 1200px) {
+    #urbotony section {
+        padding: 0 5vw 0 5vw;
+    }
+}
+
+/* Spider Sense */
+
+#spider-sense header {
+    width: 100%;
+    flex-direction: row;
+    margin-top: 100px;
+}
+#spider-sense header div {
+    margin: 0;
+}
+
+#spider-sense header img {
+    width: 40%;
 }
