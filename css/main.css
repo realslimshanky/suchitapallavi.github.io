@@ -521,7 +521,7 @@ img.spider-sense {
 
 /* Spider Sense */
 
-#spider-sense, #spider-sense #design {
+#spider-sense header, #spider-sense #design, #spider-sense #contact {
     background-color: #F1DCDC;
 }
 #spider-sense p, #spider-sense li {
@@ -564,7 +564,7 @@ img.spider-sense {
     background-color: #ffffff;
     width: 100vw;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     padding: 100px 0;
 }
 #spider-sense #work-role div {
@@ -709,5 +709,15 @@ img.spider-sense {
     }
     #spider-sense #branding .sample-text {
         font-size: 1.5rem;
+    }
+    #spider-sense #work-role {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #spider-sense #work-role div {
+        width: 25vw;
+        height: 25vw;
+        margin-bottom: 20px;
     }
 }
