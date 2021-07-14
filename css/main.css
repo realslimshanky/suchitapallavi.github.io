@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Rosario&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rosario');
 
 /* Global */
 * {
@@ -36,6 +36,10 @@ h4, p, li {
 h5 {
     font-size: 1.75rem;
     font-weight: normal;
+}
+
+ol, ul {
+    list-style-position: inside;
 }
 #curtain {
     position: fixed;
@@ -267,7 +271,7 @@ header div {
         font-size: 1.7rem;
         font-weight: normal;
     }
-    h4 {
+    h4, p, li {
         font-size: 1.5rem;
         font-weight: normal;
     }
@@ -372,6 +376,7 @@ img.spider-sense {
 }
 
 /* For About Page */
+
 #about {
     background-color: #000000;
 }
@@ -478,9 +483,6 @@ img.spider-sense {
 #urbotony .center {
     text-align: center;
 }
-#urbotony ol, #urbotony ul {
-    list-style-position: inside;
-}
 #urbotony #contact {
     margin-top: 100px;
 }
@@ -519,15 +521,193 @@ img.spider-sense {
 
 /* Spider Sense */
 
+#spider-sense, #spider-sense #design {
+    background-color: #F1DCDC;
+}
+#spider-sense p, #spider-sense li {
+    font-size: 1.5rem;
+}
+#spider-sense nav.container {
+    background-color: #F1DCDC;
+    box-shadow: 0 0 5px 0 #F1DCDC;
+}
 #spider-sense header {
-    width: 100%;
+    width: 100vw;
+    height: 100vh;
     flex-direction: row;
-    margin-top: 100px;
+    padding: 0 5vw 0 5vw;
 }
 #spider-sense header div {
-    margin: 0;
+    width: 50%;
+    text-align: left;
 }
-
+#spider-sense header div h1 {
+    margin-bottom: 50px;
+}
+#spider-sense header div h5 {
+    width: 90%;
+}
 #spider-sense header img {
     width: 40%;
+}
+#spider-sense section h4:before {
+    content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0";
+    text-decoration: line-through;
+}
+#spider-sense section:not(#work-role) h2, #spider-sense section:not(#work-role) h4 {
+    margin-bottom: 50px;
+}
+#spider-sense section:not(#work-role) p {
+    margin-bottom: 10px;
+}
+#spider-sense section {
+    background-color: #ffffff;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    padding: 100px 0;
+}
+#spider-sense #work-role div {
+    width: 15vw;
+    height: 15vw;
+    background-color: #FFFBFB;
+    box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+#spider-sense section:not(#work-role) {
+    flex-direction: column;
+    padding: 50px 5vw;
+}
+#spider-sense #branding > div, #spider-sense #branding .logo {
+    display: flex;
+}
+#spider-sense #branding div > div {
+    width: 50%;
+    margin-bottom: 50px;
+}
+#spider-sense #branding .branding-color {
+    width: 5vw;
+    height: 5vw;
+    background-color: #7B0D0D;
+    box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-bottom: 10px;
+}
+#spider-sense #branding .sample-text {
+    font-size: 2.5rem;
+}
+#spider-sense #branding > div {
+    justify-content: space-around;
+}
+#spider-sense #branding .logo img {
+    width: 10vw;
+    height: 10vw;
+}
+#spider-sense #design > div, #spider-sense #design > div > div {
+    display: flex;
+}
+#spider-sense #design > div {
+    align-items: flex-end;
+    margin: 50px 0;
+}
+#spider-sense #design > div > div {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+#spider-sense #design > div > div p {
+    margin-top: 20px;
+}
+#spider-sense #design .first-screen-ui .after > div {
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-evenly;
+}
+#spider-sense #design .first-screen-ui .before img {
+    width: 100vw;
+    max-width: 533px;
+    max-height: 286px;
+}
+#spider-sense #design .first-screen-ui .after img:nth-child(1) {
+    width: 100vw;
+    max-width: 327px;
+    max-height: 419px;
+}
+#spider-sense #design .first-screen-ui .after img:nth-child(2) {
+    width: 100vw;
+    max-width: 333px;
+    max-height: 300px;
+}
+#spider-sense #design .second-screen-ui .before > div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#spider-sense #design .second-screen-ui .before > div img {
+    margin: 10px 0;
+}
+#spider-sense #design .second-screen-ui .before img:nth-child(1) {
+    width: 100vw;
+    max-width: 508px;
+    max-height: 82px;
+}
+#spider-sense #design .second-screen-ui .before img:nth-child(2) {
+    width: 100vw;
+    max-width: 513px;
+    max-height: 144px;
+}
+#spider-sense #design .second-screen-ui .after img {
+    width: 100vw;
+    max-width: 241px;
+    max-height: 303px;
+}
+#spider-sense #design .third-screen-ui .before img {
+    width: 100vw;
+    max-width: 340px;
+    max-height: 356px;
+}
+#spider-sense #design .third-screen-ui .after img {
+    width: 100vw;
+    max-width: 207px;
+    max-height: 356px;
+}
+@media only screen and (max-width: 1200px) {
+    #spider-sense #design > div {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    #spider-sense #design .first-screen-ui .after > div {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    #spider-sense #design .first-screen-ui .after > div img {
+        margin: 10px 0;
+    }
+    #spider-sense #design > div > div p {
+        margin: 10px 0 50px 0;
+    }
+}
+@media only screen and (min-width: 801px) and (max-width: 1200px) {
+    #spider-sense p, #spider-sense li {
+        font-size: 1.5rem;
+    }
+    #spider-sense #branding .sample-text {
+        font-size: 2rem;
+    }
+}
+@media only screen and (max-width: 800px) {
+    #spider-sense p, #spider-sense li {
+        font-size: 1rem;
+    }
+    #spider-sense #branding .sample-text {
+        font-size: 1.5rem;
+    }
 }
