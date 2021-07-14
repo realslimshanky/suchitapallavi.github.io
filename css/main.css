@@ -367,7 +367,7 @@ img.spider-sense {
         padding: 100px 0;
     }
     #contact {
-        padding: 50px 1vh 50px 1vh;
+        padding: 50px 1vh;
     }
     #index-header img {
         width: 80vw;
@@ -744,5 +744,8 @@ img.spider-sense {
     }
     #spider-sense .nav-button {
         background-color: #F1DCDC;
+    }
+    #spider-sense #contact {
+        padding: 50px 1vh;
     }
 }
