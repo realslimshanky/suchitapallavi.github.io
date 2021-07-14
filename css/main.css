@@ -677,6 +677,9 @@ img.spider-sense {
     max-width: 207px;
     max-height: 356px;
 }
+#spider-sense #contact {
+    padding: 50px 20vh;
+}
 @media only screen and (max-width: 1200px) {
     #spider-sense #design > div {
         flex-direction: column;
@@ -707,6 +710,19 @@ img.spider-sense {
     #spider-sense p, #spider-sense li {
         font-size: 1rem;
     }
+    #spider-sense header {
+        flex-direction: column-reverse;
+    }
+    #spider-sense header div {
+        width: 100%;
+    }
+    #spider-sense header div h1 {
+        margin-bottom: 20px;
+    }
+    #spider-sense header img {
+        width: 100%;
+        margin-bottom: 100px;
+    }
     #spider-sense #branding .sample-text {
         font-size: 1.5rem;
     }
@@ -719,5 +735,8 @@ img.spider-sense {
         width: 25vw;
         height: 25vw;
         margin-bottom: 20px;
+    }
+    #spider-sense .nav-button {
+        background-color: #F1DCDC;
     }
 }
