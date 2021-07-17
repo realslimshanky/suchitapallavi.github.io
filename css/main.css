@@ -616,23 +616,27 @@ img.spider-sense {
     width: 13vw;
 }
 #urbotony #high-fidelity-wireframes .prototype-button {
-    background-color: #446447;
-    color: #ffffff;
+    background-color: #ffffff;
+    color: #446447;
     width: 20vw;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+    text-decoration: none;
     cursor: pointer;
     padding: 10px 0;
     margin-top: 50px;
-    box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.25);
+    transition-duration: 0.5s;
+    border: 2px solid #446447;
 }
-#urbotony #high-fidelity-wireframes .prototype-button:hover {
-    box-shadow: unset;
+#urbotony #high-fidelity-wireframes .prototype-button:hover,
+#urbotony .prototype-button a:visited:hover {
+    background-color: #446447;
+    color: white;
 }
 #urbotony .prototype-button a:link,
 #urbotony .prototype-button a:visited {
-    color: #ffffff;
+    color: #446447;
 }
 @media only screen and (min-width: 801px) {
     #urbotony header h1 {
