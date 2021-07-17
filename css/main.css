@@ -454,6 +454,26 @@ img.spider-sense {
 
 /* Urbotony */
 
+#urbotony h1 {
+    font-size: 2.5rem;
+    font-weight: normal;
+}
+#urbotony h2 {
+    font-size: 1.75rem;
+    font-weight: normal;
+}
+#urbotony h3 {
+    font-size: 1.5rem;
+    font-weight: normal;
+}
+#urbotony h4, p, li {
+    font-size: 1.2rem;
+    font-weight: normal;
+}
+#urbotony h5 {
+    font-size: 1rem;
+    font-weight: normal;
+}
 #urbotony header {
     width: 100vw;
     height: 100vh;
@@ -469,14 +489,19 @@ img.spider-sense {
 #urbotony header img {
     display: none;
 }
-#urbotony header h1 {
-    margin-bottom: 50px;
-}
 #urbotony section {
     margin-top: 100px;
-    padding: 0 10vw 0 10vw;
+    padding: 0 20vw 0 20vw;
 }
-#urbotony img {
+#urbotony section section {
+    margin-top: 100px;
+    padding: 0 1vw 0 1vw;
+}
+#urbotony section h2:before {
+    content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0";
+    text-decoration: line-through;
+}
+#urbotony #process img, #urbotony #ideate img {
     width: 100%;
 }
 #urbotony section img {
@@ -491,6 +516,150 @@ img.spider-sense {
 }
 #urbotony #contact {
     margin-top: 100px;
+}
+#urbotony #research h3 {
+    margin-top: 20px;
+}
+#urbotony .competitors {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+}
+#urbotony .competitors .competitor {
+    display: flex;
+    flex-direction: column;
+}
+#urbotony .competitors img {
+    width: 100vw;
+    max-width: 230px;
+    max-height: 430px;
+}
+#urbotony #affinity-map .map {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+#urbotony #affinity-map .map div {
+    width: 14vw;
+    background-color: #A0C5A5;
+    padding: 1vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+#urbotony #affinity-map .map div p {
+    margin-bottom: 20px;
+}
+#urbotony #persona {
+    position: relative;
+}
+#urbotony #persona img {
+    position: absolute;
+    left: 20%;
+    top: 100px;
+    width: 15vw;
+}
+#urbotony #persona .parent-grid {
+    margin-top: 50px;
+    margin-left: 5vw;
+    display: flex;
+    flex-direction: column;
+    background-color: #C4C4C4;
+    justify-content: space-around;
+    padding: 1vw 1vw 1vw 15vw;
+    min-height: 500px;
+    box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+#urbotony #persona .parent-grid .child-grid {
+    display: flex;
+    justify-content: space-between;
+}
+#urbotony #persona .parent-grid .child-grid div {
+    width: 48%;
+}
+#urbotony #color-theme .theme-block {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+#urbotony #color-theme .color-block {
+    width: 10vw;
+    height: 10vw;
+    box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-bottom: 10px;
+}
+#urbotony #color-theme .dark-green {
+    background-color: #446447;
+}
+#urbotony #color-theme .grey {
+    background-color: #d2d2d2;
+}
+#urbotony #color-theme .black {
+    background-color: #000000;
+}
+#urbotony #high-fidelity-wireframes img {
+    width: 13vw;
+}
+#urbotony #high-fidelity-wireframes .prototype-button {
+    background-color: #446447;
+    color: #ffffff;
+    width: 20vw;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    cursor: pointer;
+    padding: 10px 0;
+    margin-top: 50px;
+    box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+#urbotony #high-fidelity-wireframes .prototype-button:hover {
+    box-shadow: unset;
+}
+#urbotony .prototype-button a:link,
+#urbotony .prototype-button a:visited {
+    color: #ffffff;
+}
+@media only screen and (min-width: 801px) {
+    #urbotony header h1 {
+        margin-bottom: 50px;
+        font-size: 4rem;
+    }
+    #urbotony header h4 {
+        font-size: 1.875rem;
+    }
+}
+@media only screen and (min-width: 801px) and (max-width: 1200px) {
+    #urbotony h1 {
+        font-size: 2rem;
+        font-weight: normal;
+    }
+    #urbotony h2 {
+        font-size: 1.5rem;
+        font-weight: normal;
+    }
+    #urbotony h3 {
+        font-size: 1.0935rem;
+        font-weight: normal;
+    }
+    #urbotony h4, p, li {
+        font-size: 0.9375rem;
+        font-weight: normal;
+    }
+    #urbotony h5 {
+        font-size: 0.875rem;
+        font-weight: normal;
+    }
+    #urbotony section {
+        padding: 0 5vw 0 5vw;
+    }
+    #urbotony #persona img {
+        left: 5px;
+    }
+    #urbotony #high-fidelity-wireframes img {
+        width: 20vw;
+    }
 }
 @media only screen and (max-width: 800px) {
     #urbotony header {
@@ -510,18 +679,63 @@ img.spider-sense {
         margin-top: 50px;
         padding: 0 5vw 0 5vw;
     }
-    #urbotony section img {
+    #urbotony #process img, #urbotony #ideate img {
         width: 100vw;
         margin-left: -5vw;
+        padding: 0 5vw;
     }
-    #urbotony section section img {
-        width: 100vw;
-        margin-left: -10vw;
+    #urbotony .competitors {
+        flex-direction: column;
+        align-items: center;
     }
-}
-@media only screen and (min-width: 801px) and (max-width: 1200px) {
-    #urbotony section {
-        padding: 0 5vw 0 5vw;
+    #urbotony #affinity-map .map {
+        flex-direction: column;
+        align-items: center;
+    }
+    #urbotony #affinity-map .map div {
+        margin-top: 10px;
+        width: 30vw;
+        min-width: 250px;
+    }
+    #urbotony #persona img {
+        position: static;
+        display: block;
+        width: 30vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #urbotony #persona .parent-grid {
+        margin-left: 0;
+        padding: 2vw 2vw 20px 2vw;
+        min-height: auto;
+    }
+    #urbotony #design img {
+        display: block;
+        width: 30vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #urbotony #color-theme .color-block {
+        width: 30vw;
+        height: 30vw;
+    }
+    #urbotony #color-theme .theme-block {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #urbotony #color-theme .theme-grid {
+        margin-bottom: 20px;
+    }
+    #urbotony #color-theme .theme-grid p:nth-child(2) {
+        margin-top: 0;
+    }
+    #urbotony #low-fidelity-wireframes img,
+    #urbotony #high-fidelity-wireframes img {
+        width: 50vw;
+    }
+    #urbotony #high-fidelity-wireframes .prototype-button {
+        width: 50vw;
     }
 }
 
