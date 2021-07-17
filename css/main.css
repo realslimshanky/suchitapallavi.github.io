@@ -340,7 +340,6 @@ img.spider-sense {
 }
 #index-header img {
     width: 45vh;
-    height: 45vh;
 }
 
 @media only screen and (max-width: 800px) {
@@ -391,8 +390,7 @@ img.spider-sense {
     box-shadow: 0 0 5px 0 #000000;
 }
 #about img {
-    width: 30vw;
-    height: 30vw;
+    width: 50vh;
 }
 #about a {
     color: #01F0FF;
