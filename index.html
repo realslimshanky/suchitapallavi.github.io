@@ -1,10 +1,125 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>My netlify</title>
-  </head>
-  <body>
-    This is a demo netfily website. My first time deploy on netlify.
-  </body>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Suchita Pallavi | UX Designer | Digital Artist</title>
+        <meta name="description" content="Suchita Pallavi is a multi-disciplinary designer focused on Visual, UI and UX design.">
+
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:site" content="@suchitapallavi">
+        <meta name="twitter:title" content="Suchita Pallavi | UX Designer | Digital Artist">
+        <meta name="twitter:description" content="Suchita Pallavi is a multi-disciplinary designer focused on Visual, UI and UX design.">
+        <meta name="twitter:creator" content="@suchitapallavi">
+        <meta name="twitter:image" content="/images/index_illustration.svg">
+
+        <meta property="og:title" content="Suchita Pallavi | UX Designer | Digital Artist" />
+        <meta property="og:url" content="https://suchitapallavi.com/" />
+        <meta property="og:image" content="/images/index_illustration.svg" />
+        <meta property="og:description" content="Suchita Pallavi is a multi-disciplinary designer focused on Visual, UI and UX design." />
+
+        <link rel="stylesheet" href="css/main.css">
+        <noscript>
+            <style type="text/css">
+                #curtain {
+                    display: "none";
+                    opacity: 0;
+                    z-index: -1000;
+                }
+                @media only screen and (max-width: 800px) {
+                    nav.container {
+                        position: fixed;
+                        top: 0;
+                        width: 100vw;
+                        height: auto;
+                        padding: 40px 0 40px 0;
+                        background-color: #ffffff;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        z-index: 1;
+                    }
+                    nav.container a {
+                        padding: 0 2vw 0 2vw;
+                    }
+                }
+            </style>
+        </noscript>
+    </head>
+    <body id="index">
+        <div id="curtain"></div>
+        <div class="only-mobile nav-button mobile-nav-button">
+            <img class="nav-icon" src="/images/menu.svg" alt="Menu Icon">
+        </div>
+        <div class="only-mobile nav-button mobile-close-nav-button">
+            <img class="nav-icon" src="/images/cross.svg" alt="Cross Icon">
+        </div>
+        <a href="#"><img id="logo" src="/images/logo.png" alt="Logo"></a>
+        <nav class="container">
+            <a href="/#work">Work</a>
+            <a href="/about.html">About</a>
+            <a href="/#contact">Contact</a>
+        </nav>
+        <div id="index-header" class="header-box">
+            <div class="animated-character fade-in slide-from-left">
+                <div><img src="/images/index_illustration.svg" alt=""></div>
+            </div>
+            <header class="fade-in slide-from-right">
+                <div>
+                    <h1>Hi, I am Suchita.</h1>
+                </div>
+                <div class="header-text">
+                    <h4>I am a multi-disciplinary designer focused on Visual, UI and UX design.</h4>
+                </div>
+                <div class="header-cta">
+                    <div><a href="/resume.pdf" download="suchita-pallavi-resume.pdf"><button>RESUME</button></a></div>
+                    <div><a href="mailto:suchita.pallavi+website@gmail.com"><button>HIRE ME</button></a></div>
+                </div>
+            </header>
+        </div>
+        <div id="work">
+            <div class="fade-in">
+                <h2>UX Projects</h2>
+            </div>
+            <div class="project-row">
+                    <div class="project-image fade-in slide-from-left">
+                        <a href="/urbotony.html">
+                            <img class="urbotony" src="/images/urbotony_mockup.png" alt="Urbotony High Fidelity Mockup">
+                        </a>
+                    </div>
+                    <div class="project-description fade-in slide-from-right">
+                        <a href="/urbotony.html">
+                            <h3>URBOTONY</h3>
+                            <h4>Designed a platform from scratch for all the information related to home gardening.</h4>
+                        </a>
+                    </div>
+            </div>
+            <div class="project-row">
+                    <div class="project-image fade-in slide-from-left">
+                        <a href="/spider-sense.html">
+                            <img class="spider-sense" src="/images/spider-sense-index-ui.png" alt="Spider Sense UI">
+                        </a>
+                    </div>
+                    <div class="project-description fade-in slide-from-right">
+                        <a href="/spider-sense.html">
+                            <h3>SPIDER SENSE</h3>
+                            <h4>It is a browser extension which helps users monitor their Scrapy Cloud spider jobs.</h4>
+                        </a>
+                    </div>
+            </div>
+        </div>
+        <div id="contact">
+            <a class="fade-in slide-from-left" href="https://www.linkedin.com/in/suchitapallavi">
+                <img class="icon" src="/images/linkedin.svg" alt="Linkedin Icon">
+            </a>
+            <a class="fade-in" href="https://www.instagram.com/designsbysuchi/">
+                <img class="icon" src="/images/instagram.svg" alt="Instagram Icon">
+            </a>
+            <a class="fade-in slide-from-right" href="https://twitter.com/SuchitaPallavi">
+                <img class="icon" src="/images/twitter.svg" alt="Twitter Icon">
+            </a>
+        </div>
+    </body>
+
+    <script src="js/main.js"></script>
 </html>
