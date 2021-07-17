@@ -339,8 +339,8 @@ img.spider-sense {
     justify-content: space-evenly;
 }
 #index-header img {
-    width: 40vw;
-    height: 40vw;
+    width: 45vh;
+    height: 45vh;
 }
 
 @media only screen and (max-width: 800px) {
