@@ -845,6 +845,12 @@ img.spider-sense {
 #spider-sense #design > div > div p {
     margin-top: 20px;
 }
+#spider-sense #design .first-screen-ui .before {
+    width: 45%;
+}
+#spider-sense #design .first-screen-ui .after {
+    width: 55%;
+}
 #spider-sense #design .first-screen-ui .after > div {
     width: 100%;
     display: flex;
