@@ -451,7 +451,6 @@ img.spider-sense {
 }
 
 /* Urbotony */
-
 #urbotony h1 {
     font-size: 2.5rem;
     font-weight: normal;
@@ -577,6 +576,12 @@ img.spider-sense {
 #urbotony #persona .parent-grid .child-grid div {
     width: 48%;
 }
+#urbotony #persona .parent-grid .child-grid div p {
+    margin-bottom: 10px;
+}
+#urbotony #persona .parent-grid .child-grid div ul {
+    list-style-position: outside;
+}
 #urbotony #color-theme .theme-block {
     margin-top: 50px;
     display: flex;
@@ -622,10 +627,10 @@ img.spider-sense {
 @media only screen and (min-width: 801px) {
     #urbotony header h1 {
         margin-bottom: 50px;
-        font-size: 4rem;
+        font-size: 3rem;
     }
     #urbotony header h4 {
-        font-size: 1.875rem;
+        font-size: 1.5rem;
     }
 }
 @media only screen and (min-width: 801px) and (max-width: 1200px) {
@@ -848,17 +853,17 @@ img.spider-sense {
 }
 #spider-sense #design .first-screen-ui .before img {
     width: 100vw;
-    max-width: 533px;
-    max-height: 286px;
+    max-width: 470px;
+    max-height: 240px;
 }
 #spider-sense #design .first-screen-ui .after img:nth-child(1) {
     width: 100vw;
-    max-width: 327px;
+    max-width: 310px;
     max-height: 419px;
 }
 #spider-sense #design .first-screen-ui .after img:nth-child(2) {
     width: 100vw;
-    max-width: 333px;
+    max-width: 310px;
     max-height: 300px;
 }
 #spider-sense #design .second-screen-ui .before > div {
