@@ -750,7 +750,11 @@ img.spider-sense {
     }
     #urbotony #low-fidelity-wireframes img,
     #urbotony #high-fidelity-wireframes img {
+        display: block;
         width: 50vw;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10px;
     }
     #urbotony #high-fidelity-wireframes .prototype-button {
         width: 50vw;
