@@ -808,6 +808,12 @@ img.spider-sense {
 #spider-sense #branding > div, #spider-sense #branding .logo {
     display: flex;
 }
+#spider-sense #branding .logo p.old {
+    margin-left: 1vw;
+}
+#spider-sense #branding .logo p.new {
+    margin-left: 2vw;
+}
 #spider-sense #branding div > div {
     width: 50%;
     margin-bottom: 50px;
@@ -935,6 +941,11 @@ img.spider-sense {
         font-size: 2rem;
     }
 }
+@media only screen and (max-width: 1200px) {
+    #spider-sense #branding .logo p {
+        margin-left: 0;
+    }
+}
 @media only screen and (max-width: 800px) {
     #spider-sense p, #spider-sense li {
         font-size: 1rem;
@@ -954,6 +965,12 @@ img.spider-sense {
     }
     #spider-sense #branding .sample-text {
         font-size: 1.5rem;
+    }
+    #spider-sense #branding .logo p.old {
+        margin-left: -1vw;
+    }
+    #spider-sense #branding .logo p.new {
+        margin-left: -1.5vw;
     }
     #spider-sense #work-role {
         flex-direction: column;
