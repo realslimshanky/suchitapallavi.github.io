@@ -188,7 +188,7 @@ header div {
     z-index: 2;
 }
 
-@media only screen and (max-width: 800px) {
+@media (max-width: 800px) {
     h1 {
         font-size: 2rem;
         font-weight: normal;
@@ -259,7 +259,7 @@ header div {
     }
 }
 
-@media only screen and (min-width: 801px) and (max-width: 1200px) {
+@media (min-width: 801px) and (max-width: 1200px) {
     h1 {
         font-size: 2.5rem;
         font-weight: normal;
@@ -342,7 +342,7 @@ img.spider-sense {
     width: 45vh;
 }
 
-@media only screen and (max-width: 800px) {
+@media (max-width: 800px) {
     #work {
         padding: 20vh 0 0 0;
     }
@@ -381,6 +381,15 @@ img.spider-sense {
 }
 #about h1 {
     color: #01F0FF;
+}
+#about .header-box h1 {
+    font-size: 3rem;
+}
+#about h5 {
+    font-size: 1.5rem;
+}
+#about .header-box {
+    padding: 10vh 10vw;
 }
 #about #curtain {
     background-color: #01F0FF;
@@ -427,7 +436,7 @@ img.spider-sense {
 #about .fact-header p {
     font-size: 8rem;
 }
-@media only screen and (max-width: 800px) {
+@media (max-width: 800px) {
     #about img {
         width: 70vw;
         height: 70vw;
@@ -440,7 +449,7 @@ img.spider-sense {
         font-size: 4rem;
     }
 }
-@media only screen and (min-width: 801px) and (max-width: 1200px) {
+@media (min-width: 801px) and (max-width: 1200px) {
     .fact-header {
         color: #01F0FF;
         font-size: 15rem;
@@ -638,7 +647,7 @@ img.spider-sense {
 #urbotony .prototype-button a:visited {
     color: #446447;
 }
-@media only screen and (min-width: 801px) {
+@media (min-width: 801px) {
     #urbotony header h1 {
         margin-bottom: 50px;
         font-size: 3rem;
@@ -647,7 +656,7 @@ img.spider-sense {
         font-size: 1.5rem;
     }
 }
-@media only screen and (min-width: 801px) and (max-width: 1200px) {
+@media (min-width: 801px) and (max-width: 1200px) {
     #urbotony h1 {
         font-size: 2rem;
         font-weight: normal;
@@ -678,7 +687,7 @@ img.spider-sense {
         width: 20vw;
     }
 }
-@media only screen and (max-width: 800px) {
+@media (max-width: 800px) {
     #urbotony header {
         padding: 100px 0 0 0;
         background-image: none;
@@ -934,7 +943,7 @@ img.spider-sense {
 #spider-sense #contact {
     padding: 50px 20vh;
 }
-@media only screen and (max-width: 1200px) {
+@media (max-width: 1200px) {
     #spider-sense #design > div {
         flex-direction: column;
         align-items: center;
@@ -952,7 +961,7 @@ img.spider-sense {
         margin: 10px 0 50px 0;
     }
 }
-@media only screen and (min-width: 801px) and (max-width: 1200px) {
+@media (min-width: 801px) and (max-width: 1200px) {
     #spider-sense p, #spider-sense li {
         font-size: 1.5rem;
     }
@@ -960,12 +969,12 @@ img.spider-sense {
         font-size: 2rem;
     }
 }
-@media only screen and (max-width: 1200px) {
+@media (max-width: 1200px) {
     #spider-sense #branding .logo p {
         margin-left: 0;
     }
 }
-@media only screen and (max-width: 800px) {
+@media (max-width: 800px) {
     #spider-sense p, #spider-sense li {
         font-size: 1rem;
     }
